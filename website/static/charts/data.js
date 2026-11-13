@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794608339836,
+  "lastUpdate": 1794608352163,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -786825,54 +786825,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "96085550+vazois@users.noreply.github.com",
-            "name": "Vasileios Zois",
-            "username": "vazois"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "62281b6563a975cd260a33b841ec8f1aaec6608c",
-          "message": "update docs for CLUSTER FAILOVER (#2291)",
-          "timestamp": "2026-10-23T16:34:44-07:00",
-          "tree_id": "232fd3c090a658d93beb6014ca8386b6034be7fa",
-          "url": "https://github.com/microsoft/garnet/commit/62281b6563a975cd260a33b841ec8f1aaec6608c"
-        },
-        "date": 1792798788149,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
-            "value": 31203.087740166244,
-            "unit": "ns",
-            "range": "± 1626.2233988802643"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
-            "value": 30030.86177280971,
-            "unit": "ns",
-            "range": "± 325.54360821295535"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
-            "value": 42613.622233072914,
-            "unit": "ns",
-            "range": "± 616.749246364877"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
-            "value": 30102.71728515625,
-            "unit": "ns",
-            "range": "± 305.46626309724695"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "napoli.tiago96@gmail.com",
             "name": "Tiago Nápoli",
             "username": "tiagonapoli"
@@ -789219,6 +789171,54 @@ window.BENCHMARK_DATA = {
             "value": 22021.15718296596,
             "unit": "ns",
             "range": "± 327.66323196865636"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "96085550+vazois@users.noreply.github.com",
+            "name": "Vasileios Zois",
+            "username": "vazois"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6",
+          "message": "Support TOUCH command (#2347)\n\n* add support for TOUCH\n\n* fix ci failure",
+          "timestamp": "2026-11-13T14:13:03-08:00",
+          "tree_id": "ab432f2548d6fa4294b0bc0e555b0d2a1fa4214a",
+          "url": "https://github.com/microsoft/garnet/commit/c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6"
+        },
+        "date": 1794608317316,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
+            "value": 43464.59330240885,
+            "unit": "ns",
+            "range": "± 247.02316376966363"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 46573.834228515625,
+            "unit": "ns",
+            "range": "± 857.4810574642078"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 66509.05428799716,
+            "unit": "ns",
+            "range": "± 1627.9222266955803"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 46335.77183314732,
+            "unit": "ns",
+            "range": "± 341.72013645684115"
           }
         ]
       }
