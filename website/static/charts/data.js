@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794608303885,
+  "lastUpdate": 1794608317343,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -789227,54 +789227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "kmontrose@microsoft.com",
-            "name": "kevin-montrose",
-            "username": "kevin-montrose"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8974fdcc74588593ca9a22d907c460347ce41318",
-          "message": "Fixes for Range Index and Vector Set migration and import validation (#2283)\n\n* reject manually migrated Vector Set and Range Indexes log records; validate that migrated vector set indexes are in the correct slot\n\n* reject Vector Set index records whose parameters would not pass VADD\n\n* tests for forged migration log records\n\n* remove pointer from public surface\n\n* fix tests\n\n* formatting\n\n* enforce the same id/value length requirements on the Garnet side as are in the DiskANN side of import_term\n\n* dropping indexes on Vector Sets which are in an importing state needs locking; bit of cleanup in task and channel management; fix tests for RI ACLs\n\n* address feedback\n\n* address feedback",
-          "timestamp": "2026-10-23T14:25:48-04:00",
-          "tree_id": "5f482b2547da0535c086e504f493decd37390443",
-          "url": "https://github.com/microsoft/garnet/commit/8974fdcc74588593ca9a22d907c460347ce41318"
-        },
-        "date": 1792780250510,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
-            "value": 1689.8703208336462,
-            "unit": "ns",
-            "range": "± 8.058790623995485"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
-            "value": 1416.889490400042,
-            "unit": "ns",
-            "range": "± 11.850207135709127"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
-            "value": 1539.5634206136067,
-            "unit": "ns",
-            "range": "± 8.963532835614693"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
-            "value": 1424.9370847429548,
-            "unit": "ns",
-            "range": "± 7.3285961530268136"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "96085550+vazois@users.noreply.github.com",
             "name": "Vasileios Zois",
             "username": "vazois"
@@ -791621,6 +791573,54 @@ window.BENCHMARK_DATA = {
             "value": 1466.9307963053386,
             "unit": "ns",
             "range": "± 8.810269281133959"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "96085550+vazois@users.noreply.github.com",
+            "name": "Vasileios Zois",
+            "username": "vazois"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6",
+          "message": "Support TOUCH command (#2347)\n\n* add support for TOUCH\n\n* fix ci failure",
+          "timestamp": "2026-11-13T14:13:03-08:00",
+          "tree_id": "ab432f2548d6fa4294b0bc0e555b0d2a1fa4214a",
+          "url": "https://github.com/microsoft/garnet/commit/c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6"
+        },
+        "date": 1794608297235,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
+            "value": 2033.8659831455775,
+            "unit": "ns",
+            "range": "± 13.333777345920062"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1719.4897588094075,
+            "unit": "ns",
+            "range": "± 11.720926263717228"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1786.2276204427083,
+            "unit": "ns",
+            "range": "± 9.41564155880958"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1758.919279915946,
+            "unit": "ns",
+            "range": "± 10.365046476136824"
           }
         ]
       }
