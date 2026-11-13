@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794608215580,
+  "lastUpdate": 1794608226600,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -735505,54 +735505,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "napoli.tiago96@gmail.com",
-            "name": "Tiago Nápoli",
-            "username": "tiagonapoli"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a1c98627220fbafde966191fe52b4fa5e3ee0eb0",
-          "message": "[GarnetAsserts 1/3] Add opt-in fail-fast assertions (#2260)\n\n* Add opt-in fail-fast Garnet assertions\n\nIntroduce GarnetAsserts, lazy interpolated messages, formatter tests, and shared build integration. Define GARNET_ASSERT or set EnableGarnetAsserts=true to enable Release assertions.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: 5d191e51-89a7-4504-9cf2-1ae29b826650\n\n* Remove redundant literal-only assertion formatter test\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: 5d191e51-89a7-4504-9cf2-1ae29b826650\n\n* Move assertion static import into shared GlobalUsings\n\nCentralize compilation of the shared imports and exclude the assertion static import from NUnit test projects to avoid Assert name collisions.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: b9b36141-889a-4cca-b493-4ab4fefb0751\n\n* Preserve project-local shared global using includes\n\nRestore the existing project include blocks and exclude already compiled files from the shared GlobalUsings.cs include.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: b9b36141-889a-4cca-b493-4ab4fefb0751\n\n* Import Garnet diagnostics globally without static assertion methods\n\nKeep GarnetAsserts.Assert calls explicit without per-file namespace imports and remove the unnecessary NUnit-specific compilation guard.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: b9b36141-889a-4cca-b493-4ab4fefb0751\n\n* Restore original global namespace import scope\n\nGenerate the Garnet.Diagnostics namespace import through MSBuild without compiling shared server aliases into every project or suppressing unused imports.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: b9b36141-889a-4cca-b493-4ab4fefb0751\n\n---------\n\nCo-authored-by: Tiago Napoli <tiagonapoli@microsoft.com>\nCopilot-Session: 5d191e51-89a7-4504-9cf2-1ae29b826650\nCopilot-Session: b9b36141-889a-4cca-b493-4ab4fefb0751",
-          "timestamp": "2026-10-23T19:20:01-07:00",
-          "tree_id": "24f3e09e756913d95a46d0cbee7e5ec052b49247",
-          "url": "https://github.com/microsoft/garnet/commit/a1c98627220fbafde966191fe52b4fa5e3ee0eb0"
-        },
-        "date": 1792808616504,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
-            "value": 89124.80878155048,
-            "unit": "ns",
-            "range": "± 99.01843604221902"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
-            "value": 41159.87181599935,
-            "unit": "ns",
-            "range": "± 20.160349890818082"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
-            "value": 117900.31242152622,
-            "unit": "ns",
-            "range": "± 238.81831738230198"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
-            "value": 89502.85113994892,
-            "unit": "ns",
-            "range": "± 92.51485806296913"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "49699333+dependabot[bot]@users.noreply.github.com",
             "name": "dependabot[bot]",
             "username": "dependabot[bot]"
@@ -737899,6 +737851,54 @@ window.BENCHMARK_DATA = {
             "value": 87963.06202043805,
             "unit": "ns",
             "range": "± 495.0675150035906"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "96085550+vazois@users.noreply.github.com",
+            "name": "Vasileios Zois",
+            "username": "vazois"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6",
+          "message": "Support TOUCH command (#2347)\n\n* add support for TOUCH\n\n* fix ci failure",
+          "timestamp": "2026-11-13T14:13:03-08:00",
+          "tree_id": "ab432f2548d6fa4294b0bc0e555b0d2a1fa4214a",
+          "url": "https://github.com/microsoft/garnet/commit/c148a37ef67553b7fcc3c4fc776ce204ce7d7ef6"
+        },
+        "date": 1794608209663,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
+            "value": 70820.16198730469,
+            "unit": "ns",
+            "range": "± 858.8219707693107"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
+            "value": 31325.931518554688,
+            "unit": "ns",
+            "range": "± 232.34979981125954"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
+            "value": 87138.38852364676,
+            "unit": "ns",
+            "range": "± 588.8353272538351"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
+            "value": 66904.5922663762,
+            "unit": "ns",
+            "range": "± 654.7498327921671"
           }
         ]
       }
