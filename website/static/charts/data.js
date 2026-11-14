@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794621624142,
+  "lastUpdate": 1794621634160,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -733103,54 +733103,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "49699333+dependabot[bot]@users.noreply.github.com",
-            "name": "dependabot[bot]",
-            "username": "dependabot[bot]"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "703d298536e4729312ce07f45a02f4fbc9accdd0",
-          "message": "Build(deps): Bump postcss-selector-parser in /website (#2301)\n\nBumps [postcss-selector-parser](https://github.com/postcss/postcss-selector-parser) from 6.1.2 to 6.1.5.\n- [Release notes](https://github.com/postcss/postcss-selector-parser/releases)\n- [Changelog](https://github.com/postcss/postcss-selector-parser/blob/6.1.5/CHANGELOG.md)\n- [Commits](https://github.com/postcss/postcss-selector-parser/compare/v6.1.2...6.1.5)\n\n---\nupdated-dependencies:\n- dependency-name: postcss-selector-parser\n  dependency-version: 6.1.5\n  dependency-type: indirect\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-          "timestamp": "2026-10-26T11:01:37-07:00",
-          "tree_id": "b5c0971275fd539c9220cd6776277252d1fc579f",
-          "url": "https://github.com/microsoft/garnet/commit/703d298536e4729312ce07f45a02f4fbc9accdd0"
-        },
-        "date": 1793038036654,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
-            "value": 2074.7147101084392,
-            "unit": "ns",
-            "range": "± 2.7619859060330816"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
-            "value": 1894.7274529139202,
-            "unit": "ns",
-            "range": "± 4.152003164750826"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
-            "value": 1888.0406928429236,
-            "unit": "ns",
-            "range": "± 3.0573090644677072"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
-            "value": 1886.5131844111852,
-            "unit": "ns",
-            "range": "± 2.3855782135381873"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "15467143+TedHartMS@users.noreply.github.com",
             "name": "Ted Hart",
             "username": "TedHartMS"
@@ -735497,6 +735449,54 @@ window.BENCHMARK_DATA = {
             "value": 1347.4842038472493,
             "unit": "ns",
             "range": "± 9.488084814414579"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3412254f6662a496571ef251bdbfe3db66904601",
+          "message": "Bump to 2.2.12 (#2384)\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\nCopilot-Session: 4783415c-ee4b-4665-9a4b-2130d7cc8830",
+          "timestamp": "2026-11-13T17:55:05-08:00",
+          "tree_id": "7902f431a40d861db71df9cb810bb665071c3329",
+          "url": "https://github.com/microsoft/garnet/commit/3412254f6662a496571ef251bdbfe3db66904601"
+        },
+        "date": 1794621580105,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
+            "value": 2056.0515264783585,
+            "unit": "ns",
+            "range": "± 16.24043800714257"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1892.2293823242187,
+            "unit": "ns",
+            "range": "± 19.215524393387124"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1840.6331043243408,
+            "unit": "ns",
+            "range": "± 15.833255084231661"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1859.4793362617493,
+            "unit": "ns",
+            "range": "± 3.6184518453374115"
           }
         ]
       }
